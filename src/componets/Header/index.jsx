@@ -1,18 +1,18 @@
-import {HeaderContainetr, TitleContainer, Title} from "./styled"
+import {HeaderContainetr, TitleContainerBlue,  TitleContainerRed ,Title} from "./styled"
 
-const Header = ({containerTitlePrimary,containerTitleSecundary}) =>{
+const Header = ({}) =>{
   return(
       <HeaderContainetr>
-        <TitleContainer $containerTitlePrimary={containerTitlePrimary}>
+        <TitleContainerRed >
             <Title>
               Gamer
             </Title>
-        </TitleContainer>
-        <TitleContainer $containerTitleSecundary={containerTitleSecundary}>
+        </TitleContainerRed>
+        <TitleContainerBlue >
             <Title>
               Placar
             </Title>
-          </TitleContainer>
+          </TitleContainerBlue>
       
       </HeaderContainetr>
   )
