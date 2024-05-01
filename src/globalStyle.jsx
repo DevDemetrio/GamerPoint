@@ -11,6 +11,10 @@ body{
     box-sizing: border-box;
   } 
 
+  body, span, div, header{
+    margin: 0px;
+    padding: 0px
+  }
 
 `
 
