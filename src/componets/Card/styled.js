@@ -9,6 +9,11 @@ export const CardContainer = styled.div`
   background-color: #FF0000;
   margin-left: auto;
   margin-right: auto;
+
+  @media(min-width: 600px){
+    width: 374px;
+    height: 530px;
+  }
 `
 
 export const CirclePoint = styled.div`
@@ -21,10 +26,20 @@ export const CirclePoint = styled.div`
   border: 1px solid #FFFFFF;
   border-radius: 50%;
   background-color: #FFFFFF;
+
+
+  @media(min-width: 600px){
+    width: 175px;
+    height: 175px;
+  }
 `
 
 export const Point = styled.span`
   color: #FF0000;
   font-size: 25px;
   font-weight: bold;
+
+  @media(min-width: 600px){
+    font-size: 45px;
+  }
 `
