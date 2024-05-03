@@ -9,6 +9,11 @@ export const ButtonContainer = styled.div`
   padding: 0 10px 0 10px;
   border: none;
 
+  @media(min-width: 600px){
+    width: 330px;
+    height: 266px;
+  }
+
 `
 
 export const ButtonCotainerInternal = styled.div`

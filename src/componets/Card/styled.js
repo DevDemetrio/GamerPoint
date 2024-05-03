@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const CardContainer = styled.div`
   width: 158px;
-  height: 224px;
+  height: 240px;
   margin-top: 30px;
   border-radius: 5%;
   padding-top: 10px;

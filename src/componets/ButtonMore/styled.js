@@ -17,6 +17,17 @@ export const Button = styled.button`
 
   &+&{
     margin-top: 4px;
-  }      
+  }
+  
+  @media(min-width: 600px){
+    width: 60px;
+    height: 60px;
+
+    font-size: 25px;
+
+    &+&{
+    margin-top: 7px;
+  }
+  }
 `
 
