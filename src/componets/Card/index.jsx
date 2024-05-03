@@ -5,15 +5,25 @@ import { ButtonContainer, } from "../../containerButton"
 import ButttonLess from "../ButtonLess"
 import { ContainerButtonInternalLess } from "../../containerButtonInternalLess copy"
 import { ContainerButtonInternalMore } from "../../containerButtonInternalMore"
+import React from 'react';
 
 
 const Card = ({primaryColor, primaryDetailColor}) =>{
   
+  const [numberPoint, setNumberPoint] = React.useState(0);
+
+  function handleClickPrimaryMore(poitPrimary){
+    setNumberPoint((prevNumber) => prevNumber + poitPrimary);
+  }
+  function handleClickSeundayLess(pointSegundary){
+    setNumberPoint((prevNumber) => prevNumber - pointSegundary);
+  }
+
   return(
     <CardContainer $primaryColor={primaryColor}>
       <CirclePoint>
           <Point>
-            100
+            {numberPoint}
           </Point>
       </CirclePoint>
       <DivMoreLess $primaryDetailColor={primaryDetailColor}>
@@ -26,16 +36,16 @@ const Card = ({primaryColor, primaryDetailColor}) =>{
       </DivMoreLess>
       <ButtonContainer >
             <ContainerButtonInternalMore>
-              <ButttonMore  number={1}/>
-              <ButttonMore  number={3}/>
-              <ButttonMore  number={5}/>
-              <ButttonMore  number={10}/>
+              <ButttonMore  onClick={() => handleClickPrimaryMore(1)} number={1}/>
+              <ButttonMore  onClick={() => handleClickPrimaryMore(3)} number={3}/>
+              <ButttonMore  onClick={() => handleClickPrimaryMore(5)} number={5}/>
+              <ButttonMore  onClick={() => handleClickPrimaryMore(10)} number={10}/>
             </ContainerButtonInternalMore>
               <ContainerButtonInternalLess>
-              <ButttonLess  number={1}/>
-              <ButttonLess  number={3}/>
-              <ButttonLess  number={5}/>
-              <ButttonLess  number={10}/>
+              <ButttonLess onClick={() => handleClickSeundayLess(1)}  number={1}/>
+              <ButttonLess onClick={() => handleClickSeundayLess(3)}  number={3}/>
+              <ButttonLess onClick={() => handleClickSeundayLess(5)}  number={5}/>
+              <ButttonLess onClick={() => handleClickSeundayLess(10)} number={10}/>
             </ContainerButtonInternalLess>
 
       </ButtonContainer>

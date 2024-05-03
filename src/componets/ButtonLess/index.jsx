@@ -1,8 +1,8 @@
 import { Button } from "../ButtonMore/styled"
 
-const ButttonLess = ({number}) =>{
+const ButttonLess = ({number, onClick}) =>{
   return(
-    <Button>
+    <Button onClick={onClick}>
       {number}
     </Button>
   )
