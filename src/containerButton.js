@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
   width: 130px;
   height: 80px;
   margin: 9px auto 0 auto;
+  padding: 0 10px 0 10px;
   border: none;
 
 `

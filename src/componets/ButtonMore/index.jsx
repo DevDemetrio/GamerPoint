@@ -1,9 +1,9 @@
 import { Button } from "./styled"
 
-const ButttonMore = () =>{
+const ButttonMore = ({number}) =>{
   return(
     <Button>
-      1
+      {number}
     </Button>
   )
 }
