@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   margin-top: 30px;
   border-radius: 5%;
   padding-top: 10px;
-  background-color: #FF0000;
+  background-color: ${(props) => props.$primaryColor };
   margin-left: auto;
   margin-right: auto;
 
